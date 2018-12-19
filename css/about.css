@@ -1,0 +1,82 @@
+/* about Page */
+#about-page #about-content {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#about-page #about-content #about-sidebar {
+  padding: 0 2em 0 2em;
+  text-align: center;
+}
+
+@media screen and (max-width: 975px) {
+  #about-page #about-content #about-sidebar {
+    padding: 1em 0 0 0;
+  }
+}
+
+#about-page #about-content #about-sidebar img {
+  width: 150px;
+  border-radius: 50%;
+  border: 5px solid #1047a0;
+  margin: 0.5em;
+}
+
+#about-page #about-content #about-sidebar #about-facts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#about-page #about-content #about-sidebar #about-facts .fact-set {
+  margin: 0.6em;
+}
+
+#about-page #about-content #about-sidebar #about-facts .fact-set .fact-icon {
+  color: #0a3477;
+}
+
+#about-page #about-content #about-sidebar #about-facts .fact-set h4 {
+  margin: 0;
+  line-height: 1.2;
+  font-weight: 500;
+  font-size: 1.2em;
+  color: #0a3477;
+}
+
+#about-page #about-content #about-sidebar #about-facts .fact-set h5 {
+  margin: 0;
+  line-height: 1;
+  font-weight: 400;
+  font-size: 1.1em;
+  color: #002054;
+}
+
+@media (max-width: 975px) {
+  #about-page #about-content #about-sidebar #about-facts {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+#about-page #about-content #about-info {
+  max-width: 600px;
+  color: #1047a0;
+  font-size: 1.2em;
+}
+/*# sourceMappingURL=about.css.map */

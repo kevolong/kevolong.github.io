@@ -1,0 +1,86 @@
+/* Skills Page */
+#skills-page {
+  color: #1047a0;
+}
+
+@media (max-width: 479px) {
+  #skills-page #skills-content {
+    font-size: 13px;
+  }
+}
+
+#skills-page .skill-grid {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-grid-rows: auto auto;
+      grid-template-rows: auto auto;
+  row-gap: 3em;
+}
+
+#skills-page .skill-section {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: auto auto;
+      grid-template-rows: auto auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  row-gap: 0.5em;
+}
+
+#skills-page .skill-section h2 {
+  margin: 0;
+}
+
+#skills-page .skill-section .icon-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  row-gap: 1em;
+}
+
+#skills-page .skill-section .icon-row .icon-col {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#skills-page .skill-section .icon-set {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 4em 2em;
+      grid-template-rows: 4em 2em;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  margin: 0 1em 0 1em;
+}
+
+#skills-page .skill-section .icon-set .icon {
+  width: 3em;
+}
+
+#skills-page .skill-section .icon-set h4 {
+  font-weight: 300;
+}
+/*# sourceMappingURL=skills.css.map */

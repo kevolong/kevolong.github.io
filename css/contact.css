@@ -1,0 +1,54 @@
+/* Contact Page */
+#contact-page {
+  color: #1047a0;
+}
+
+#contact-page #contact-grid {
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "text" "mail" "social";
+  text-align: center;
+}
+
+#contact-page #contact-grid a:link,
+#contact-page #contact-grid a:visited,
+#contact-page #contact-grid a:active {
+  text-decoration: none;
+  color: #1047a0;
+}
+
+#contact-page #contact-grid a:hover {
+  text-decoration: none;
+  color: black;
+}
+
+#contact-page #contact-grid #text-row {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: text;
+  margin-bottom: 3em;
+}
+
+#contact-page #contact-grid #text-row h3 {
+  font-weight: 400;
+  line-height: 1.1;
+}
+
+#contact-page #contact-grid #mail-row {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: mail;
+  margin-bottom: 2em;
+}
+
+#contact-page #contact-grid #social-row {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: social;
+}
+
+#contact-page #contact-grid #social-row .icon {
+  margin-left: 0.25em;
+  margin-right: 0.25em;
+}
+/*# sourceMappingURL=contact.css.map */
