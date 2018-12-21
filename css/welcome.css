@@ -89,7 +89,7 @@
   line-height: 2.5;
 }
 
-@media only screen and (max-width: 479px) {
+@media screen and (max-width: 479px) {
   #welcome-page .welcome-content #pitch {
     text-align: center;
   }
@@ -113,6 +113,12 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+@media screen and (max-width: 479px) {
+  #welcome-page .welcome-content #check-me-out {
+    padding-top: 0;
+  }
 }
 
 #welcome-page .welcome-content #check-me-out button {

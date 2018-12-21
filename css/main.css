@@ -89,7 +89,7 @@
   line-height: 2.5;
 }
 
-@media only screen and (max-width: 479px) {
+@media screen and (max-width: 479px) {
   #welcome-page .welcome-content #pitch {
     text-align: center;
   }
@@ -113,6 +113,12 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+@media screen and (max-width: 479px) {
+  #welcome-page .welcome-content #check-me-out {
+    padding-top: 0;
+  }
 }
 
 #welcome-page .welcome-content #check-me-out button {
@@ -723,7 +729,7 @@
 }
 
 #about-page #about-content #about-sidebar #about-facts .fact-set {
-  margin: 0.6em;
+  margin: 1em;
 }
 
 #about-page #about-content #about-sidebar #about-facts .fact-set .fact-icon {
@@ -733,17 +739,9 @@
 #about-page #about-content #about-sidebar #about-facts .fact-set h4 {
   margin: 0;
   line-height: 1.2;
-  font-weight: 500;
-  font-size: 1.2em;
-  color: #0a3477;
-}
-
-#about-page #about-content #about-sidebar #about-facts .fact-set h5 {
-  margin: 0;
-  line-height: 1;
   font-weight: 400;
   font-size: 1.1em;
-  color: #002054;
+  color: #0a3477;
 }
 
 @media (max-width: 975px) {
