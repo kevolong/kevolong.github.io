@@ -98,6 +98,7 @@
   border-radius: 5px;
   border: 2px solid #1047a0;
   margin: 1em;
+  cursor: pointer;
 }
 
 @media (max-width: 375px) {
@@ -139,6 +140,7 @@
 
 #portfolio-page #portfolio-content .card-pics .pic-left {
   position: absolute;
+  cursor: pointer;
   bottom: 0;
   left: 0;
   background-color: rgba(155, 169, 193, 0.4);
@@ -147,6 +149,7 @@
 
 #portfolio-page #portfolio-content .card-pics .pic-right {
   position: absolute;
+  cursor: pointer;
   bottom: 0;
   right: 0;
   background-color: rgba(155, 169, 193, 0.4);
@@ -363,7 +366,7 @@
 }
 
 #portfolio-page #portfolio-content #project-modal .full-card .card-body .card-footer .visit {
-  justify-self: start;
+  justify-self: end;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -377,7 +380,6 @@
   background-color: #9ba9c1;
   border-radius: 3px;
   padding: 0.25em 0.35em 0.25em 0.35em;
-  margin-right: 1.5em;
 }
 
 #portfolio-page #portfolio-content #project-modal .full-card .card-body .card-footer .visit .visit-icon {
@@ -391,12 +393,13 @@
 }
 
 #portfolio-page #portfolio-content #project-modal .full-card .card-body .card-footer .close {
-  cursor: pointer;
+  margin-left: 1.5em;
 }
 
 #portfolio-page #portfolio-content #project-modal .full-card .card-body .card-footer .close button {
   border: none;
   background-color: #1047a0;
+  cursor: pointer;
 }
 
 #portfolio-page #portfolio-content #project-modal .full-card .card-body .card-footer .close .close-icon {

@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "3890af4c3ddde7a8b36e74d787b5114a",
-    "url": "/kevolong.github.io/static/media/dViz_scatter_cropped.3890af4c.jpg"
+    "revision": "ef64fd556571916ebb6fb80ff871bf3b",
+    "url": "/kevolong.github.io/static/media/dViz_treemap_cropped.ef64fd55.jpg"
   },
   {
-    "revision": "f8e5d8ed720f52e40462",
-    "url": "/kevolong.github.io/static/js/main.f8e5d8ed.chunk.js"
+    "revision": "1196f6936592ee367e10",
+    "url": "/kevolong.github.io/static/js/main.1196f693.chunk.js"
   },
   {
     "revision": "3f75e6405107540a2089",
@@ -92,6 +92,14 @@ self.__precacheManifest = [
     "url": "/kevolong.github.io/static/media/pug_mono.b7e2a020.svg"
   },
   {
+    "revision": "fbe21c55d90780c85abe680abf93f21f",
+    "url": "/kevolong.github.io/static/media/typescript.fbe21c55.svg"
+  },
+  {
+    "revision": "6972c046518cbff7c8adc517c0e22133",
+    "url": "/kevolong.github.io/static/media/angular.6972c046.svg"
+  },
+  {
     "revision": "08f69cea3cbd110bf7cdc79a699ff7e2",
     "url": "/kevolong.github.io/static/media/kevin-colorado-wedding.08f69cea.jpg"
   },
@@ -140,12 +148,12 @@ self.__precacheManifest = [
     "url": "/kevolong.github.io/static/media/dViz_choropleth_cropped.830c18b1.jpg"
   },
   {
-    "revision": "a569b69280131aac7a4c7de74031945b",
-    "url": "/kevolong.github.io/static/media/placeholder.a569b692.jpg"
+    "revision": "3890af4c3ddde7a8b36e74d787b5114a",
+    "url": "/kevolong.github.io/static/media/dViz_scatter_cropped.3890af4c.jpg"
   },
   {
-    "revision": "ef64fd556571916ebb6fb80ff871bf3b",
-    "url": "/kevolong.github.io/static/media/dViz_treemap_cropped.ef64fd55.jpg"
+    "revision": "a569b69280131aac7a4c7de74031945b",
+    "url": "/kevolong.github.io/static/media/placeholder.a569b692.jpg"
   },
   {
     "revision": "f356e8f3ab4af09686ad1cfaeccea4af",
@@ -276,11 +284,27 @@ self.__precacheManifest = [
     "url": "/kevolong.github.io/static/media/anon_test_cropped.a088d3b4.jpg"
   },
   {
-    "revision": "e64fca12e1115d952fb7",
-    "url": "/kevolong.github.io/static/js/1.e64fca12.chunk.js"
+    "revision": "a9eb41ee751a6b0bba3735d77797fc47",
+    "url": "/kevolong.github.io/static/media/fscalc_icon_cropped.a9eb41ee.jpg"
   },
   {
-    "revision": "19f9896475ab8e4d16a136dd5d9cc87f",
+    "revision": "c98a216cb7e62f5f0d434a4f0acb9df9",
+    "url": "/kevolong.github.io/static/media/fscalc_footage_cropped.c98a216c.jpg"
+  },
+  {
+    "revision": "c63080a33028a1a3e5f0ab3af74635e9",
+    "url": "/kevolong.github.io/static/media/fscalc_space_cropped.c63080a3.jpg"
+  },
+  {
+    "revision": "c4d1eabf164aeaf2cd034b36c72f5a97",
+    "url": "/kevolong.github.io/static/media/fscalc_info_cropped.c4d1eabf.jpg"
+  },
+  {
+    "revision": "1727a26006f059802185",
+    "url": "/kevolong.github.io/static/js/1.1727a260.chunk.js"
+  },
+  {
+    "revision": "e085c11d0d19c159bba2cb7c4e09b343",
     "url": "/kevolong.github.io/index.html"
   }
 ];

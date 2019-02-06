@@ -82,11 +82,11 @@
 }
 
 #welcome-page .welcome-content #pitch #pitch-intro {
-  line-height: 1.5;
+  line-height: 1.75;
 }
 
 #welcome-page .welcome-content #pitch #pitch-main {
-  line-height: 2.5;
+  line-height: 1.75;
 }
 
 @media screen and (max-width: 479px) {
@@ -372,6 +372,7 @@
   border-radius: 5px;
   border: 2px solid #1047a0;
   margin: 1em;
+  cursor: pointer;
 }
 
 @media (max-width: 375px) {
@@ -413,6 +414,7 @@
 
 #portfolio-page #portfolio-content .card-pics .pic-left {
   position: absolute;
+  cursor: pointer;
   bottom: 0;
   left: 0;
   background-color: rgba(155, 169, 193, 0.4);
@@ -421,6 +423,7 @@
 
 #portfolio-page #portfolio-content .card-pics .pic-right {
   position: absolute;
+  cursor: pointer;
   bottom: 0;
   right: 0;
   background-color: rgba(155, 169, 193, 0.4);
@@ -637,7 +640,7 @@
 }
 
 #portfolio-page #portfolio-content #project-modal .full-card .card-body .card-footer .visit {
-  justify-self: start;
+  justify-self: end;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -651,7 +654,6 @@
   background-color: #9ba9c1;
   border-radius: 3px;
   padding: 0.25em 0.35em 0.25em 0.35em;
-  margin-right: 1.5em;
 }
 
 #portfolio-page #portfolio-content #project-modal .full-card .card-body .card-footer .visit .visit-icon {
@@ -665,12 +667,13 @@
 }
 
 #portfolio-page #portfolio-content #project-modal .full-card .card-body .card-footer .close {
-  cursor: pointer;
+  margin-left: 1.5em;
 }
 
 #portfolio-page #portfolio-content #project-modal .full-card .card-body .card-footer .close button {
   border: none;
   background-color: #1047a0;
+  cursor: pointer;
 }
 
 #portfolio-page #portfolio-content #project-modal .full-card .card-body .card-footer .close .close-icon {
@@ -783,8 +786,6 @@ body {
   min-height: 4em;
   top: 0;
   left: 0;
-  padding-left: 2em;
-  padding-right: 1em;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -792,26 +793,22 @@ body {
   color: white;
 }
 
-@media (max-width: 479px) {
-  #navbar {
-    padding-left: 0.25em;
-    padding-right: 0.25em;
-  }
-}
-
 #navbar #nav-home-div {
   width: 25%;
+  padding-left: 2em;
 }
 
 @media (max-width: 550px) {
   #navbar #nav-home-div {
     width: 20%;
+    padding-left: 0.25em;
   }
 }
 
 @media (max-width: 479px) {
   #navbar #nav-home-div {
-    width: 15%;
+    width: 18%;
+    padding-left: 0.25em;
   }
 }
 
@@ -822,17 +819,20 @@ body {
 
 #navbar #nav-links-div {
   width: 75%;
+  padding-right: 2em;
 }
 
 @media (max-width: 550px) {
   #navbar #nav-links-div {
     width: 80%;
+    padding-right: 0.25em;
   }
 }
 
 @media (max-width: 479px) {
   #navbar #nav-links-div {
-    width: 85%;
+    width: 82%;
+    padding-right: 0.25em;
   }
 }
 
@@ -844,14 +844,22 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   list-style-type: none;
   -webkit-padding-start: 0px;
   justify-self: center;
   margin: 0;
   padding: 0;
+}
+
+@media (max-width: 550px) {
+  #navbar #nav-links-div #nav-links {
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
 }
 
 #navbar #nav-links-div #nav-links .nav-link {
@@ -881,13 +889,33 @@ body {
   color: white;
 }
 
+#navbar #nav-links-div #nav-links .margin-both {
+  margin: 0 2.25em 0 2.25em;
+}
+
+@media (max-width: 550px) {
+  #navbar #nav-links-div #nav-links .margin-both {
+    margin: 0;
+  }
+}
+
+#navbar #nav-links-div #nav-links .margin-left {
+  margin: 0 0 0 2.25em;
+}
+
+@media (max-width: 550px) {
+  #navbar #nav-links-div #nav-links .margin-left {
+    margin: 0;
+  }
+}
+
 #app-container .app-page {
   min-height: 100vh;
   display: -ms-grid;
   display: grid;
   -ms-grid-rows: 4em 5em 1fr 5em;
       grid-template-rows: 4em 5em 1fr 5em;
-      grid-template-areas: "." "header" "content" "arrows";
+      grid-template-areas: "." "header" "content" "footer";
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -942,26 +970,6 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   padding: 0.25em 0 0.25em 0;
-}
-
-#app-container .page-arrows {
-  -ms-grid-row: 4;
-  -ms-grid-column: 1;
-  grid-area: arrows;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-#app-container .page-arrows .arrow {
-  padding: 0 0.25em 0 0.25em;
-  color: #c6c6d1;
 }
 
 body.welcome-body {

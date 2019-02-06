@@ -82,11 +82,11 @@
 }
 
 #welcome-page .welcome-content #pitch #pitch-intro {
-  line-height: 1.5;
+  line-height: 1.75;
 }
 
 #welcome-page .welcome-content #pitch #pitch-main {
-  line-height: 2.5;
+  line-height: 1.75;
 }
 
 @media screen and (max-width: 479px) {
