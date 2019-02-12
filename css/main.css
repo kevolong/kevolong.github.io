@@ -132,6 +132,11 @@
   color: #c6c6d1;
 }
 
+#welcome-page .welcome-content #check-me-out a {
+  text-decoration: none;
+  color: #c6c6d1;
+}
+
 /* Contact Page */
 #contact-page {
   color: #1047a0;
@@ -866,7 +871,6 @@ body {
   cursor: pointer;
   line-height: 1;
   font-size: 1.25em;
-  color: #c6c6d1;
 }
 
 @media (max-width: 479px) {
@@ -881,11 +885,16 @@ body {
   }
 }
 
-#navbar #nav-links-div #nav-links .nav-link:hover {
+#navbar #nav-links-div #nav-links a {
+  text-decoration: none;
+  color: #c6c6d1;
+}
+
+#navbar #nav-links-div #nav-links a:hover {
   color: #146eff;
 }
 
-#navbar #nav-links-div #nav-links .active {
+#navbar #nav-links-div #nav-links a.active {
   color: white;
 }
 
