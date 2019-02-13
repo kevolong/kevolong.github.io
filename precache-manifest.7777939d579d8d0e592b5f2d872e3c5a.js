@@ -1,15 +1,15 @@
 self.__precacheManifest = [
   {
-    "revision": "ef64fd556571916ebb6fb80ff871bf3b",
-    "url": "/kevolong.github.io/static/media/dViz_treemap_cropped.ef64fd55.jpg"
+    "revision": "9a7562c505192dfc1e3153427cc08ee1",
+    "url": "/kevolong.github.io/static/media/dViz_logo.9a7562c5.jpg"
   },
   {
-    "revision": "91e12a2a863fa9815648",
-    "url": "/kevolong.github.io/static/js/main.91e12a2a.chunk.js"
+    "revision": "0feeaeb0e81e398ef195",
+    "url": "/kevolong.github.io/static/js/main.0feeaeb0.chunk.js"
   },
   {
-    "revision": "a569b69280131aac7a4c7de74031945b",
-    "url": "/kevolong.github.io/static/media/placeholder.a569b692.jpg"
+    "revision": "c4d1eabf164aeaf2cd034b36c72f5a97",
+    "url": "/kevolong.github.io/static/media/fscalc_info_cropped.c4d1eabf.jpg"
   },
   {
     "revision": "96c2b490d38c299d3ba3927557641a55",
@@ -136,8 +136,8 @@ self.__precacheManifest = [
     "url": "/kevolong.github.io/static/media/wiki_home_full_cropped.1db95828.jpg"
   },
   {
-    "revision": "9a7562c505192dfc1e3153427cc08ee1",
-    "url": "/kevolong.github.io/static/media/dViz_logo.9a7562c5.jpg"
+    "revision": "59788aab6b0f1fb7465e",
+    "url": "/kevolong.github.io/static/js/runtime~main.59788aab.js"
   },
   {
     "revision": "a1b37c1618fb3d65658db50137beb4c6",
@@ -152,36 +152,8 @@ self.__precacheManifest = [
     "url": "/kevolong.github.io/static/media/dViz_scatter_cropped.3890af4c.jpg"
   },
   {
-    "revision": "59788aab6b0f1fb7465e",
-    "url": "/kevolong.github.io/static/js/runtime~main.59788aab.js"
-  },
-  {
-    "revision": "f356e8f3ab4af09686ad1cfaeccea4af",
-    "url": "/kevolong.github.io/static/media/drum_machine_logo.f356e8f3.jpg"
-  },
-  {
-    "revision": "041cb5dc39757b461e8848cffe8606cc",
-    "url": "/kevolong.github.io/static/media/drum_machine_cropped.041cb5dc.jpg"
-  },
-  {
-    "revision": "88ccec3e43b42a15b78b03dc92f9d280",
-    "url": "/kevolong.github.io/static/media/quote_logo_solo.88ccec3e.jpg"
-  },
-  {
-    "revision": "3cef436988697d98074cb496f1f84fc1",
-    "url": "/kevolong.github.io/static/media/quote_purple_cropped.3cef4369.jpg"
-  },
-  {
-    "revision": "a4a3bc1f678a07baf7d39ee72369d13c",
-    "url": "/kevolong.github.io/static/media/quote_twitter_cropped.a4a3bc1f.jpg"
-  },
-  {
-    "revision": "7fa4333eb684943ca0b6078935782d9a",
-    "url": "/kevolong.github.io/static/media/quote_blue_cropped.7fa4333e.jpg"
-  },
-  {
-    "revision": "c43e757c771ee34ed05df37e0a397006",
-    "url": "/kevolong.github.io/static/media/quote_black_cropped.c43e757c.jpg"
+    "revision": "ef64fd556571916ebb6fb80ff871bf3b",
+    "url": "/kevolong.github.io/static/media/dViz_treemap_cropped.ef64fd55.jpg"
   },
   {
     "revision": "9f7f75efb87cbdada1c2877f12da5852",
@@ -296,15 +268,11 @@ self.__precacheManifest = [
     "url": "/kevolong.github.io/static/media/fscalc_space_cropped.c63080a3.jpg"
   },
   {
-    "revision": "c4d1eabf164aeaf2cd034b36c72f5a97",
-    "url": "/kevolong.github.io/static/media/fscalc_info_cropped.c4d1eabf.jpg"
+    "revision": "766bc1b7564bc5ccd2ad",
+    "url": "/kevolong.github.io/static/js/2.766bc1b7.chunk.js"
   },
   {
-    "revision": "ded86d2f136c43c858de",
-    "url": "/kevolong.github.io/static/js/2.ded86d2f.chunk.js"
-  },
-  {
-    "revision": "6cad5977134c3da2d63ec7801f8a804b",
+    "revision": "5cbdc26145d3124d9d1a7ce929f3c746",
     "url": "/kevolong.github.io/index.html"
   }
 ];

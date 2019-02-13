@@ -14,7 +14,8 @@ class Portfolio extends Component {
         pic: "",
         desc: "",
         skills: [],
-        url: ""
+        url: "",
+        code: ""
       },
       currentPic: 0, // Current pic showing
       numPics: featuredProject.pics.length // Number of pics for current project
@@ -56,12 +57,18 @@ class Portfolio extends Component {
     const projectName = event.currentTarget.id;
     const type = event.currentTarget.dataset.type;
     let project;
+    let code = "";
 
     //Filter by type
     if (type === "front-end") {
       project = frontEndProjects.filter(project => project.title === projectName);
     } else if (type === "full-stack") {
       project = fullStackProjects.filter(project => project.title === projectName);
+    }
+
+    //If Source Code available
+    if (project[0].hasOwnProperty("code")) {
+      code = project[0].code;
     }
 
     this.setState({
@@ -71,7 +78,8 @@ class Portfolio extends Component {
         pics: project[0].pics,
         desc: project[0].desc,
         skills: project[0].skills,
-        url: project[0].url
+        url: project[0].url,
+        code: code
       },
       numPics: project[0].pics.length,
       currentPic: 0
@@ -87,7 +95,8 @@ class Portfolio extends Component {
         pic: "",
         desc: "",
         skills: [],
-        url: ""
+        url: "",
+        code: ""
       },
       numPics: 0,
       currentPic: 0
@@ -215,15 +224,30 @@ function Featured(props) {
         <p className="card-description">{project.desc}</p>
         <div className="card-skills">{skills}</div> {/* end card-skills*/}
         <div className="card-footer">
+          <a href={project.code} className="code-link" target="_blank" rel="noreferrer noopener">
+            {" "}
+            <div className="visit">
+              <FontAwesomeIcon
+                className="visit-icon"
+                icon={["fas", "code"]}
+                size="lg"
+                transform="shrink-2"
+                fixedWidth
+              />
+              <h4 className="visit-text">Code</h4>
+            </div>
+          </a>
           <a href={project.url} target="_blank" rel="noreferrer noopener">
             {" "}
             <div className="visit">
               <FontAwesomeIcon
                 className="visit-icon"
-                icon={["fas", "external-link-square-alt"]}
+                icon={["fas", "desktop"]}
                 size="lg"
+                transform="shrink-2"
+                fixedWidth
               />
-              <h4 className="visit-text">View Site</h4>
+              <h4 className="visit-text">Site</h4>
             </div>
           </a>
         </div>{" "}
@@ -284,6 +308,8 @@ function Modal(props) {
     </h5>
   ));
 
+  console.log(props.modalInfo.code);
+
   return (
     <div id="project-modal">
       <div className="full-card animated zoomIn faster">
@@ -314,16 +340,39 @@ function Modal(props) {
           <p className="card-description">{props.modalInfo.desc}</p>
           <div className="card-skills">{skills}</div> {/* end card-skills*/}
           <div className="card-footer">
-            <a href={props.modalInfo.url} target="_blank" rel="noreferrer noopener">
-              <div className="visit">
-                <FontAwesomeIcon
-                  className="visit-icon"
-                  icon={["fas", "external-link-square-alt"]}
-                  size="lg"
-                />
-                <h4 className="visit-text">View Site</h4>
-              </div>
-            </a>
+            <div className="visit-links">
+              {props.modalInfo.code !== "" && (
+                <a
+                  href={props.modalInfo.code}
+                  className="code-link"
+                  target="_blank"
+                  rel="noreferrer noopener">
+                  {" "}
+                  <div className="visit">
+                    <FontAwesomeIcon
+                      className="visit-icon"
+                      icon={["fas", "code"]}
+                      size="lg"
+                      transform="shrink-2"
+                      fixedWidth
+                    />
+                    <h4 className="visit-text">Code</h4>
+                  </div>
+                </a>
+              )}
+              <a href={props.modalInfo.url} target="_blank" rel="noreferrer noopener">
+                <div className="visit">
+                  <FontAwesomeIcon
+                    className="visit-icon"
+                    icon={["fas", "desktop"]}
+                    size="lg"
+                    transform="shrink-2"
+                    fixedWidth
+                  />
+                  <h4 className="visit-text">Site</h4>
+                </div>
+              </a>
+            </div>
 
             <div className="close">
               <button id="close-modal-button" onClick={props.closeModal}>

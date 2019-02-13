@@ -1,0 +1,58 @@
+/* Contact Page */
+
+@import "variables";
+$font-color-contact: $content-color;
+
+//Div container
+#contact-page {
+  color: $font-color-contact;
+  //Grid for text and icons
+  #contact-grid {
+    display: grid;
+    grid-template-areas:
+      "text"
+      "mail"
+      "social";
+    text-align: center;
+
+    //Icon links
+    a:link,
+    a:visited,
+    a:active {
+      text-decoration: none;
+      color: $font-color-contact;
+    }
+
+    a:hover {
+      text-decoration: none;
+      color: black;
+    }
+
+    //Row for text
+    #text-row {
+      grid-area: text;
+      margin-bottom: 3em;
+      h3 {
+        font-weight: 400;
+        line-height: 1.1;
+      }
+    }
+
+    //Row for mail icon
+    #mail-row {
+      grid-area: mail;
+      margin-bottom: 2em;
+    }
+
+    //Row for social icons
+    #social-row {
+      grid-area: social;
+
+      //Font Awesome icons
+      .icon {
+        margin-left: 0.25em;
+        margin-right: 0.25em;
+      }
+    }
+  }
+}

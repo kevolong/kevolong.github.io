@@ -11,13 +11,6 @@ import dViz2 from "../assets/images/previews/dViz_bar_cropped.jpg";
 import dViz3 from "../assets/images/previews/dViz_choropleth_cropped.jpg";
 import dViz4 from "../assets/images/previews/dViz_scatter_cropped.jpg";
 import dViz5 from "../assets/images/previews/dViz_treemap_cropped.jpg";
-import drum1 from "../assets/images/previews/drum_machine_logo.jpg";
-import drum2 from "../assets/images/previews/drum_machine_cropped.jpg";
-import quote1 from "../assets/images/previews/quote_logo_solo.jpg";
-import quote2 from "../assets/images/previews/quote_purple_cropped.jpg";
-import quote3 from "../assets/images/previews/quote_twitter_cropped.jpg";
-import quote4 from "../assets/images/previews/quote_blue_cropped.jpg";
-import quote5 from "../assets/images/previews/quote_black_cropped.jpg";
 import punch1 from "../assets/images/previews/punchclock_cropped.jpg";
 import punch2 from "../assets/images/previews/punchclock_top_cropped.jpg";
 import punch3 from "../assets/images/previews/punchclock_mid_cropped.jpg";
@@ -47,9 +40,18 @@ import fscalc1 from "../assets/images/previews/fscalc_icon_cropped.jpg";
 import fscalc2 from "../assets/images/previews/fscalc_footage_cropped.jpg";
 import fscalc3 from "../assets/images/previews/fscalc_space_cropped.jpg";
 import fscalc4 from "../assets/images/previews/fscalc_info_cropped.jpg";
-//import fscalc5 from "../assets/images/previews/fscalc_custom_cropped.jpg";
-// eslint-disable-next-line
+
+/* Unused
+import fscalc5 from "../assets/images/previews/fscalc_custom_cropped.jpg";
+import quote1 from "../assets/images/previews/quote_logo_solo.jpg";
+import quote2 from "../assets/images/previews/quote_purple_cropped.jpg";
+import quote3 from "../assets/images/previews/quote_twitter_cropped.jpg";
+import quote4 from "../assets/images/previews/quote_blue_cropped.jpg";
+import quote5 from "../assets/images/previews/quote_black_cropped.jpg";
+import drum1 from "../assets/images/previews/drum_machine_logo.jpg";
+import drum2 from "../assets/images/previews/drum_machine_cropped.jpg";
 import placeholder from "../assets/images/previews/placeholder.jpg";
+*/
 
 const frontEndProjects = [
   {
@@ -58,7 +60,8 @@ const frontEndProjects = [
     desc:
       "Footage Size Calculator estimates how much space video footage will take, or how much footage can fit into a space.",
     skills: ["Angular", "Typescript", "HTML/SASS"],
-    url: "https://footagecalc.com"
+    url: "https://footagecalc.com",
+    code: "https://github.com/kevolong/fsCALC/tree/gh-pages/src"
   },
   {
     title: "Weather Now",
@@ -66,7 +69,8 @@ const frontEndProjects = [
     desc:
       "Weather Now displays the current weather based on user's geolocation in Imperial or Metric. Background image based on weather conditions and time of day. Uses the OpenWeatherMap API.",
     skills: ["Javascript", "jQuery", "Bootstrap", "HTML/CSS"],
-    url: "https://kevolong.github.io/WeatherNow/"
+    url: "https://kevolong.github.io/WeatherNow/",
+    code: "https://github.com/kevolong/WeatherNow"
   },
 
   {
@@ -75,7 +79,8 @@ const frontEndProjects = [
     desc:
       "Wikisearchia connects with the Wikipedia API to bring the top ten results of a search or a random article.",
     skills: ["Javascript", "jQuery", "Bootstrap", "HTML/CSS"],
-    url: "https://kevolong.github.io/Wikisearchia/"
+    url: "https://kevolong.github.io/Wikisearchia/",
+    code: "https://github.com/kevolong/Wikisearchia"
   },
   {
     title: "dViz",
@@ -83,36 +88,24 @@ const frontEndProjects = [
     desc:
       "A collection of D3 data visualizations: choropleth, scatterplot, heatmap, treemaps, and a bar chart.",
     skills: ["D3", "Javascript", "jQuery", "HTML/CSS"],
-    url: "https://kevolong.github.io/dViz/"
-  },
-  {
-    title: "DigDrum",
-    pics: [drum1, drum2],
-    desc: "A digital drum-machine the user can play with using keyboard or mouse.",
-    skills: ["React", "Javascript", "Bootstrap", "HTML/CSS"],
-    url: "https://kevolong.github.io/DigDrum/"
-  },
-  {
-    title: "Random Quote Machine",
-    pics: [quote1, quote2, quote3, quote4, quote5],
-    desc:
-      "Endless random quote generator with dynamic color themes that allows users to easily share on social media. Connects with Talaikis Quotes API.",
-    skills: ["Javascript", "jQuery", "Bootstrap", "HTML/CSS"],
-    url: "https://kevolong.github.io/RandomQuote/"
+    url: "https://kevolong.github.io/dViz/",
+    code: "https://github.com/kevolong/dViz"
   },
   {
     title: "Punch Clocks",
     pics: [punch1, punch2, punch3, punch4],
     desc: "Punch Clocks is a sample product landing page. The guaranteed knockout of sleep!",
     skills: ["HTML/CSS"],
-    url: "https://kevolong.github.io/PunchClocks/"
+    url: "https://kevolong.github.io/PunchClocks/",
+    code: "https://github.com/kevolong/PunchClocks"
   },
   {
     title: "jsDOC",
     pics: [doc1, doc2, doc3],
     desc: "Sample technical documentation with responsive navigation menu.",
     skills: ["HTML/SASS"],
-    url: "https://kevolong.github.io/jsDOC/"
+    url: "https://kevolong.github.io/jsDOC/",
+    code: "https://github.com/kevolong/jsDOC"
   }
 ];
 
@@ -123,15 +116,17 @@ const fullStackProjects = [
     desc:
       "A Love Actually trivia game. 10 questions chosen at random from the server but balanced for difficulty. Scores and IPs are stored in a MongoDB for ranking and QA.",
     skills: ["React", "Node.js", "Express", "MongoDB", "Pug", "Mocha", "HTML/SASS"],
-    url: "https://triviaactually.com"
+    url: "https://triviaactually.com",
+    code: "https://github.com/kevolong/TriviaActually"
   },
   {
     title: "Metric/Imperial Converter",
     pics: [metimp1, metimp2, metimp3, metimp4, metimp5],
     desc:
       "Metric/Imperial Converter is a REST API with a front-end app that converts between popular metric and imperial units.",
-    skills: ["Node.js", "Express", "jQuery", "Helmet", "Mocha/Chai/Zombie", "HTML/CSS"],
-    url: "https://fcc-metimp-convert-kl.glitch.me/"
+    skills: ["Node.js", "Express", "jQuery", "Helmet", "Mocha/Chai/Zombie", "HTML/SASS"],
+    url: "https://fcc-metimp-convert-kl.glitch.me/",
+    code: "https://github.com/kevolong/Metric-Imperial-Convert"
   },
   {
     title: "AnonBoard",
@@ -146,9 +141,10 @@ const fullStackProjects = [
       "Helmet",
       "Mocha/Chai/Zombie",
       "Bootstrap",
-      "HTML/CSS"
+      "HTML/SASS"
     ],
-    url: "https://fcc-anonboard-kl.glitch.me/"
+    url: "https://fcc-anonboard-kl.glitch.me/",
+    code: "https://github.com/kevolong/AnonBoard"
   }
 ];
 
@@ -167,6 +163,21 @@ const unused = [
       "Pomodoro Clock lets users set custom work and break sessions for their pomodoro technique, alerting by sound when it's time to switch.",
     skills: ["React", "Javascript", "Bootstrap", "HTML/CSS"],
     url: "https://kevolong.github.io/PomClock/"
+  },
+  {
+    title: "DigDrum",
+    //pics: [drum1, drum2],
+    desc: "A digital drum-machine the user can play with using keyboard or mouse.",
+    skills: ["React", "Javascript", "Bootstrap", "HTML/CSS"],
+    url: "https://kevolong.github.io/DigDrum/"
+  },
+  {
+    title: "Random Quote Machine",
+    //pics: [quote1, quote2, quote3, quote4, quote5],
+    desc:
+      "Endless random quote generator with dynamic color themes that allows users to easily share on social media. Connects with Talaikis Quotes API.",
+    skills: ["Javascript", "jQuery", "Bootstrap", "HTML/CSS"],
+    url: "https://kevolong.github.io/RandomQuote/"
   }
 ];
 

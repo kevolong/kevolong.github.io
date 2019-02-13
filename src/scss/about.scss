@@ -1,0 +1,67 @@
+/* about Page */
+
+@import "variables";
+$font-color-about: $content-color;
+
+#about-page {
+  #about-content {
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    //Picture and facts
+    #about-sidebar {
+      padding: 0 2em 0 2em;
+      text-align: center;
+
+      @media screen and (max-width: 975px) {
+        padding: 1em 0 0 0;
+      }
+
+      //About image
+      img {
+        width: 150px;
+        border-radius: 50%;
+        border: 5px solid $font-color-about;
+        margin: 0.5em;
+      }
+
+      //Facts
+      #about-facts {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        //Div for each icon and description
+        .fact-set {
+          margin: 1em;
+
+          //Font Awesome Icons
+          .fact-icon {
+            color: $color-blue-mid;
+          }
+
+          //Description
+          h4 {
+            margin: 0;
+            line-height: 1.2;
+            font-weight: 400;
+            font-size: 1.1em;
+            color: $color-blue-mid; //$font-color-about;
+          }
+        }
+
+        @media (max-width: 975px) {
+          flex-direction: row;
+        }
+      }
+    }
+
+    //About text
+    #about-info {
+      max-width: 600px;
+      color: $font-color-about;
+      font-size: 1.2em;
+    }
+  }
+}

@@ -1,0 +1,373 @@
+/* Portfolio Page */
+
+@import "variables";
+$font-color-portfolio: $content-color;
+$card-color: $content-color;
+
+//Div container
+#portfolio-page {
+  #portfolio-content {
+    display: grid;
+    grid-template-rows: auto 1fr;
+    justify-content: center;
+    align-items: center;
+
+    //Menu for portfolio category
+    #portfolio-menu {
+      display: flex;
+      justify-content: center;
+      margin: 0.5em 0 0.5em;
+
+      a {
+        text-decoration: none;
+      }
+
+      button {
+        margin: 0 1em 0 1em;
+        cursor: pointer;
+        border: none;
+        border-radius: 5px;
+        background-color: white;
+        font-size: 1.5em;
+
+        @media (max-width: 475px) {
+          font-size: 1.15em;
+          margin: 0 0.65em 0 0.65em;
+        }
+
+        @media (max-width: 375px) {
+          font-size: 1.05em;
+          margin: 0 0.5em 0 0.5em;
+        }
+
+        @media (max-width: 325px) {
+          font-size: 1em;
+          margin: 0 0.4em 0 0.4em;
+        }
+      }
+
+      button.selected {
+        font-weight: 500;
+        color: $font-color-portfolio;
+      }
+
+      button.unselected {
+        font-weight: 300;
+        color: $color-blue-dark;
+      }
+    } // end of #portfolio-menu
+
+    //Grid for all cards
+    .preview-cards {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: row;
+      flex-wrap: wrap;
+
+      //Image and title card
+      .small-card {
+        display: grid;
+        grid-template-rows: auto auto;
+        align-items: center;
+        min-width: 250px;
+        max-width: 280px;
+        text-align: center;
+        border-radius: 5px;
+        border: 2px solid $card-color;
+        margin: 1em;
+        cursor: pointer;
+
+        @media (max-width: 375px) {
+          max-width: 275px;
+        }
+
+        img {
+          max-width: 100%;
+          border-bottom: 1px solid $color-blue-black;
+        }
+
+        .card-title {
+          font-weight: 400;
+          line-height: 1;
+          padding: 0.5em 0 0.5em 0;
+          margin: 0;
+          background-color: $card-color;
+          color: $color-white-off;
+        }
+      }
+
+      .small-card:hover {
+        box-shadow: 0px 0px 8px 2px rgba(10, 52, 119, 0.75);
+      }
+    } // end of .preview-cards
+
+    //Pics and nav arrows for Featured and Modal
+    .card-pics {
+      position: relative;
+      margin: 0;
+      padding: 0;
+      max-height: 300px;
+
+      img {
+        width: 100%;
+        margin: 0;
+      }
+
+      //Left Arrow
+      .pic-left {
+        position: absolute;
+        cursor: pointer;
+        bottom: 0;
+        left: 0;
+        background-color: rgba(155, 169, 193, 0.4); // grey-silver
+        color: rgba(0, 32, 84, 0.75); //blue-dark
+      }
+      //Right Arrow
+      .pic-right {
+        position: absolute;
+        cursor: pointer;
+        bottom: 0;
+        right: 0;
+        background-color: rgba(155, 169, 193, 0.4);
+        color: rgba(0, 32, 84, 0.75);
+      }
+    }
+
+    .featured-card {
+      display: grid;
+      justify-self: center;
+      grid-template-rows: auto auto;
+      align-items: center;
+      min-width: 300px;
+      max-width: 450px;
+      text-align: left;
+      border-radius: 5px;
+      border: 2px solid $card-color;
+
+      @media (max-width: 375px) {
+        max-width: 300px;
+      }
+
+      //All text
+      .card-body {
+        padding: 0.75em;
+        border-top: 5px solid $color-blue-black;
+        background-color: $card-color;
+        color: $color-white-off;
+
+        //Title
+        .card-title {
+          font-weight: 500;
+          line-height: 1;
+          margin: 0 0 0.5em 0;
+        }
+
+        //Description
+        .card-description {
+          font-weight: 400;
+          line-height: 1.2;
+          margin: 0.5em 0 0.5em 0;
+        }
+
+        //Made With
+        .card-skills {
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+
+          //Skill (i.e. "Javascript")
+          .skill {
+            margin: 0.25em;
+            padding: 0.15em 0.25em 0.15em 0.25em;
+            border-radius: 3px;
+            border: 1px solid;
+            font-weight: 300;
+            color: $color-grey-light;
+          }
+        } // end of card-skills
+
+        .card-footer {
+          display: flex;
+          align-items: center;
+          margin-top: 1em;
+          justify-content: flex-end;
+          color: $color-grey-silver;
+
+          a {
+            text-decoration: none;
+          }
+
+          .code-link {
+            margin-right: 1em;
+          }
+
+          .visit {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            height: 1.5em;
+            line-height: 1;
+            background-color: $color-grey-silver;
+
+            border-radius: 3px;
+            padding: 0.25em 0.35em 0.25em 0.35em;
+
+            //Font Awesome open icon
+            .visit-icon {
+              color: $color-blue-darker;
+            }
+
+            .visit-text {
+              margin: 0 0 0 0.25em;
+              line-height: 1;
+              color: $color-blue-darker;
+            }
+          } // end of .visit
+        }
+      }
+    } // end of .full-card
+
+    //Modal for full card with image, title, description, skills, and link
+    #project-modal {
+      position: fixed;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 1;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.6); /* Black w/ opacity */
+
+      //Card
+      .full-card {
+        display: grid;
+        grid-template-rows: auto auto;
+        align-items: center;
+        min-width: 300px;
+        max-width: 450px;
+        text-align: left;
+        border-radius: 5px;
+        border: 1px solid $card-color;
+        box-shadow: 0px 0px 12px 4px rgba(0, 32, 84, 0.75);
+
+        @media (max-width: 375px) {
+          max-width: 300px;
+        }
+
+        //All text
+        .card-body {
+          padding: 0.75em;
+          border-top: 5px solid $color-blue-black;
+          background-color: $card-color;
+          color: $color-white-off;
+
+          //Title
+          .card-title {
+            font-weight: 500;
+            line-height: 1;
+            margin: 0 0 0.5em 0;
+          }
+
+          //Description
+          .card-description {
+            font-weight: 400;
+            line-height: 1.2;
+            margin: 0.5em 0 0.5em 0;
+          }
+
+          //Made With
+          .card-skills {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+
+            //Skill (i.e. "Javascript")
+            .skill {
+              margin: 0.25em;
+              padding: 0.15em 0.25em 0.15em 0.25em;
+              border-radius: 3px;
+              border: 1px solid;
+              font-weight: 300;
+              color: $color-grey-light;
+            }
+          } // end of card-skills
+
+          //Grid for visit/close
+          .card-footer {
+            display: flex;
+            align-items: center;
+            margin-top: 1em;
+            justify-content: flex-end;
+            color: $color-grey-silver;
+
+            a {
+              text-decoration: none;
+            }
+
+            .code-link {
+              margin-right: 1em;
+            }
+
+            .visit-links {
+              display: flex;
+              align-items: center;
+              justify-content: flex-end;
+
+              //Visit Site button div
+              .visit {
+                justify-self: end;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                line-height: 1;
+                height: 1.5em;
+                background-color: $color-grey-silver;
+
+                border-radius: 3px;
+                padding: 0.25em 0.35em 0.25em 0.35em;
+
+                //Font Awesome open icon
+                .visit-icon {
+                  color: $color-blue-darker;
+                }
+
+                .visit-text {
+                  margin: 0 0 0 0.25em;
+                  line-height: 1;
+                  color: $color-blue-darker;
+                }
+              } // end of .visit
+            }
+
+            //Close Button div
+            .close {
+              margin-left: 0.75em;
+
+              button {
+                border: none;
+                background-color: $card-color;
+                cursor: pointer;
+              }
+
+              //Font Awesome X icon
+
+              .close-icon {
+                color: $color-grey-silver;
+              }
+              .close-icon-bottom {
+                color: $color-grey-silver;
+              }
+              .close-icon-top {
+                background-color: $color-blue-darker;
+              }
+            } // end of .close
+          } // end of .card-footer
+        } // end of .card-body
+      } // end of .full-card
+    } // end of #project-modal
+  } // end of #portfolio-content
+} // end of #portfolio-page

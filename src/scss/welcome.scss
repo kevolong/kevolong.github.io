@@ -1,0 +1,123 @@
+/* Welcome Page */
+
+@import "variables";
+
+$font-color-welcome: $color-white-off;
+$font-color-grey: #c6c6d1;
+
+//Div container
+#welcome-page {
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 100vh;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+
+  //Main Content
+  .welcome-content {
+    display: grid;
+    column-gap: 5em;
+    grid-template-areas:
+      "kevin pitch"
+      "kevin pitch"
+      "button button";
+    color: $font-color-welcome;
+
+    @media only screen and (max-width: 479px) {
+      grid-template-areas:
+        "kevin"
+        "pitch"
+        "button";
+    }
+
+    //Avatar, Name and Title
+    #badge {
+      grid-area: kevin;
+      justify-self: center;
+      align-self: center;
+      text-align: center;
+
+      //kevin-comic.png
+      img {
+        max-width: 200px;
+        margin: 0;
+
+        @media (max-width: 479px) {
+          max-width: 150px;
+        }
+      }
+
+      //Kevin Long
+      h1 {
+        font-weight: 800;
+        line-height: 1.2;
+        margin: 0;
+      }
+
+      //Full Stack Developer
+      h2 {
+        font-weight: 700;
+        line-height: 1.2;
+        margin: 0;
+      }
+    }
+
+    //Pitch description
+    #pitch {
+      grid-area: pitch;
+      align-self: center;
+
+      h4 {
+        font-weight: 500;
+        font-size: 1.2em;
+      }
+
+      #pitch-intro {
+        line-height: 1.75;
+      }
+
+      #pitch-main {
+        line-height: 1.75; // 2.5
+      }
+
+      @media screen and (max-width: 479px) {
+        text-align: center;
+      }
+
+      @media (max-height: 570px) {
+        h4 {
+          font-size: 1.1em;
+        }
+      }
+    }
+
+    //Check Me Out button
+    #check-me-out {
+      padding-top: 1.5em;
+      grid-area: button;
+      display: flex;
+      justify-content: center;
+
+      @media screen and (max-width: 479px) {
+        padding-top: 0;
+      }
+
+      button {
+        cursor: pointer;
+        border-radius: 5px;
+        border: 2px solid $font-color-grey;
+        padding: 10px;
+        font-size: 1em;
+        font-weight: 400;
+        background-color: transparent; //$body-color-welcome;
+        color: $font-color-grey;
+      }
+
+      a {
+        text-decoration: none;
+        color: $font-color-grey;
+      }
+    }
+  }
+}

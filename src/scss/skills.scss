@@ -1,0 +1,73 @@
+/* Skills Page */
+
+@import "variables";
+$font-color-skills: $content-color;
+
+//Div container
+#skills-page {
+  color: $font-color-skills;
+  //Main content
+  #skills-content {
+    @media (max-width: 479px) {
+      font-size: 13px;
+    }
+  }
+
+  //Grid for Front-End and Back-End sections
+  .skill-grid {
+    display: grid;
+    justify-content: center;
+    grid-template-rows: auto auto;
+    row-gap: 3em;
+  }
+
+  //Section for each icon-row with header
+  .skill-section {
+    display: grid;
+    grid-template-rows: auto auto;
+    justify-content: center;
+    text-align: center;
+    row-gap: 0.5em;
+
+    //Sub-headers for Front-End and Back-End
+    h2 {
+      margin: 0;
+    }
+
+    //Row for icons
+    .icon-row {
+      display: flex;
+      align-items: flex-end;
+      flex-wrap: wrap;
+      justify-content: center;
+      row-gap: 1em;
+
+      //Column with row to determine wrap-sets
+      .icon-col {
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+      }
+    }
+
+    //Icon and label set
+    .icon-set {
+      display: grid;
+      grid-template-rows: 4em 2em;
+      justify-items: center;
+      align-items: center;
+      text-align: center;
+      margin: 0 1em 0 1em;
+
+      //SVG icon
+      .icon {
+        width: 3em;
+      }
+
+      //Skill label
+      h4 {
+        font-weight: 300;
+      }
+    }
+  }
+}

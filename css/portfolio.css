@@ -226,7 +226,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-top: 1.25em;
+  margin-top: 1em;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
@@ -235,6 +235,10 @@
 
 #portfolio-page #portfolio-content .featured-card .card-body .card-footer a {
   text-decoration: none;
+}
+
+#portfolio-page #portfolio-content .featured-card .card-body .card-footer .code-link {
+  margin-right: 1em;
 }
 
 #portfolio-page #portfolio-content .featured-card .card-body .card-footer .visit {
@@ -247,6 +251,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  height: 1.5em;
   line-height: 1;
   background-color: #9ba9c1;
   border-radius: 3px;
@@ -258,7 +263,7 @@
 }
 
 #portfolio-page #portfolio-content .featured-card .card-body .card-footer .visit .visit-text {
-  margin: 0 0 0 0.5em;
+  margin: 0 0 0 0.25em;
   line-height: 1;
   color: #01122d;
 }
@@ -347,17 +352,16 @@
 }
 
 #portfolio-page #portfolio-content #project-modal .full-card .card-body .card-footer {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: auto auto;
-      grid-template-columns: auto auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-top: 1.25em;
+  margin-top: 1em;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
-          justify-content: end;
+          justify-content: flex-end;
   color: #9ba9c1;
 }
 
@@ -365,7 +369,23 @@
   text-decoration: none;
 }
 
-#portfolio-page #portfolio-content #project-modal .full-card .card-body .card-footer .visit {
+#portfolio-page #portfolio-content #project-modal .full-card .card-body .card-footer .code-link {
+  margin-right: 1em;
+}
+
+#portfolio-page #portfolio-content #project-modal .full-card .card-body .card-footer .visit-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+#portfolio-page #portfolio-content #project-modal .full-card .card-body .card-footer .visit-links .visit {
   justify-self: end;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -377,23 +397,24 @@
       -ms-flex-align: center;
           align-items: center;
   line-height: 1;
+  height: 1.5em;
   background-color: #9ba9c1;
   border-radius: 3px;
   padding: 0.25em 0.35em 0.25em 0.35em;
 }
 
-#portfolio-page #portfolio-content #project-modal .full-card .card-body .card-footer .visit .visit-icon {
+#portfolio-page #portfolio-content #project-modal .full-card .card-body .card-footer .visit-links .visit .visit-icon {
   color: #01122d;
 }
 
-#portfolio-page #portfolio-content #project-modal .full-card .card-body .card-footer .visit .visit-text {
-  margin: 0 0 0 0.5em;
+#portfolio-page #portfolio-content #project-modal .full-card .card-body .card-footer .visit-links .visit .visit-text {
+  margin: 0 0 0 0.25em;
   line-height: 1;
   color: #01122d;
 }
 
 #portfolio-page #portfolio-content #project-modal .full-card .card-body .card-footer .close {
-  margin-left: 1.5em;
+  margin-left: 0.75em;
 }
 
 #portfolio-page #portfolio-content #project-modal .full-card .card-body .card-footer .close button {

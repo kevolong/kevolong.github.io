@@ -1,0 +1,273 @@
+@import "welcome";
+@import "contact";
+@import "skills";
+@import "portfolio";
+@import "about";
+@import "variables";
+
+$nav-height: 4em;
+$nav-padding: 2em;
+$nav-padding-mobile: 0.25em;
+$nav-link-margin: 2.25em;
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: "Heebo", sans-serif; // weights 300,400,500,700,800
+  margin: 0 0 0 0;
+}
+
+//Fixed navbar
+#navbar {
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  z-index: 100;
+  overflow: hidden;
+  width: 100%;
+  min-height: $nav-height;
+  top: 0;
+  left: 0;
+  align-items: center;
+  background-color: $background-color-nav;
+  color: white;
+
+  //Welcome/home link div
+  #nav-home-div {
+    width: 25%;
+    padding-left: $nav-padding;
+
+    @media (max-width: 550px) {
+      width: 20%;
+      padding-left: $nav-padding-mobile;
+    }
+    @media (max-width: 479px) {
+      width: 18%;
+      padding-left: $nav-padding-mobile;
+    }
+
+    // Avatar pic
+    img {
+      width: 64px;
+      cursor: pointer;
+    }
+  }
+
+  // Nav links div
+  #nav-links-div {
+    width: 75%;
+    padding-right: $nav-padding;
+
+    @media (max-width: 550px) {
+      width: 80%;
+      padding-right: $nav-padding-mobile;
+    }
+    @media (max-width: 479px) {
+      width: 82%;
+      padding-right: $nav-padding-mobile;
+    }
+
+    //Links UL
+    #nav-links {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      list-style-type: none;
+      -webkit-padding-start: 0px;
+      justify-self: center;
+      margin: 0;
+      padding: 0;
+
+      @media (max-width: 550px) {
+        justify-content: space-evenly;
+      }
+
+      //Link LI
+      .nav-link {
+        cursor: pointer;
+        line-height: 1;
+        font-size: 1.25em;
+
+        @media (max-width: 479px) {
+          font-size: 1em;
+        }
+        @media (max-width: 325px) {
+          font-size: 0.9em;
+        }
+      }
+
+      a {
+        text-decoration: none;
+        color: $color-grey-light;
+      }
+      a:hover {
+        color: #146eff;
+      }
+
+      a.active {
+        color: white;
+      }
+
+      //Margin left and right
+      .margin-both {
+        margin: 0 $nav-link-margin 0 $nav-link-margin;
+
+        @media (max-width: 550px) {
+          margin: 0;
+        }
+      }
+
+      //Margin left only
+      .margin-left {
+        margin: 0 0 0 $nav-link-margin;
+
+        @media (max-width: 550px) {
+          margin: 0;
+        }
+      }
+    } // end of #nav-links
+  } //end of #nav-links-div
+} // end of #navbar
+
+//React app
+#app-container {
+  //Component div
+  .app-page {
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: $nav-height 5em 1fr 5em;
+    grid-template-areas: "." "header" "content" "footer";
+    justify-content: center;
+    overflow: hidden;
+
+    @media (max-width: 479px) {
+      grid-template-rows: $nav-height 3em 1fr 3em;
+    }
+  }
+
+  // Page Headers
+  .page-header {
+    grid-area: header;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 1.1;
+    color: $color-light-black;
+
+    @media (max-width: 479px) {
+      font-size: 12px;
+    }
+    //Main Heading
+    h1 {
+      font-weight: 800;
+      font-size: 2.5em;
+      margin: 0.5em 0 0 0;
+    }
+
+    //Sub Heading
+    h5 {
+      margin: 0;
+    }
+  }
+
+  //Main content
+  .page-content {
+    grid-area: content;
+    max-width: 90vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.25em 0 0.25em 0;
+  }
+}
+
+// Welcome page body with gradient background
+body.welcome-body {
+  background: linear-gradient(
+    -45deg,
+    $color-blue-dark,
+    $color-blue-mid,
+    $color-blue-light,
+    $color-blue-mid,
+    $color-blue-dark,
+    $color-blue-darker,
+    $color-blue-black
+  );
+  background-size: 400% 400%;
+  -webkit-animation: Gradient 15s ease infinite;
+  -moz-animation: Gradient 15s ease infinite;
+  animation: Gradient 15s ease infinite;
+
+  @-webkit-keyframes Gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+  @-moz-keyframes Gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+  @keyframes Gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+  @-webkit-keyframes Gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+  @-moz-keyframes Gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+  @keyframes Gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+}
