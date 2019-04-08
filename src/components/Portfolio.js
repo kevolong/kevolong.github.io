@@ -294,7 +294,7 @@ function FullStack(props) {
   ));
 
   return (
-    <div id="fullstack-preview" className="preview-cards animated fadeInRight faster">
+    <div id="fullstack-preview" className="preview-cards animated fadeInLeft faster">
       {cards}
     </div>
   );

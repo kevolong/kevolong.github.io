@@ -210,7 +210,28 @@
           justify-content: center;
   -ms-grid-rows: auto auto;
       grid-template-rows: auto auto;
-  row-gap: 3em;
+  grid-gap: 4em;
+}
+
+#skills-page .skill-grid #back-and-dev-grid {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-grid-columns: auto auto;
+      grid-template-columns: auto auto;
+  grid-gap: 3em;
+}
+
+@media screen and (max-width: 950px) {
+  #skills-page .skill-grid #back-and-dev-grid {
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+    -ms-grid-rows: auto auto;
+        grid-template-rows: auto auto;
+    grid-gap: 3em;
+  }
 }
 
 #skills-page .skill-section {
@@ -558,13 +579,22 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  z-index: 1;
+  z-index: 99;
   left: 0;
   top: 0;
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.6);
   /* Black w/ opacity */
+}
+
+@media screen and (max-width: 479px) {
+  #portfolio-page #portfolio-content #project-modal {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    margin-top: 4em;
+  }
 }
 
 #portfolio-page #portfolio-content #project-modal .full-card {
@@ -584,9 +614,21 @@
           box-shadow: 0px 0px 12px 4px rgba(0, 32, 84, 0.75);
 }
 
+@media screen and (max-width: 479px) {
+  #portfolio-page #portfolio-content #project-modal .full-card {
+    margin-top: 1em;
+  }
+}
+
 @media (max-width: 375px) {
   #portfolio-page #portfolio-content #project-modal .full-card {
     max-width: 300px;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  #portfolio-page #portfolio-content #project-modal .full-card .card-pics {
+    max-height: 200px;
   }
 }
 
@@ -715,6 +757,11 @@
 }
 
 /* about Page */
+#about-page {
+  -ms-grid-rows: 5em 1fr 4em;
+      grid-template-rows: 5em 1fr 4em;
+}
+
 #about-page #about-content {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
@@ -794,7 +841,8 @@ html {
 
 body {
   font-family: "Heebo", sans-serif;
-  margin: 0 0 0 0;
+  margin: 0;
+  overflow: hidden;
 }
 
 #navbar {
@@ -940,27 +988,31 @@ body {
 }
 
 #app-container .app-page {
-  min-height: 100vh;
+  position: absolute;
+  top: 4em;
+  bottom: 0;
+  width: 100vw;
+  overflow-y: auto;
+  z-index: 1;
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: 4em 5em 1fr 5em;
-      grid-template-rows: 4em 5em 1fr 5em;
-      grid-template-areas: "." "header" "content" "footer";
+  -ms-grid-rows: 5em 1fr 4.75em;
+      grid-template-rows: 5em 1fr 4.75em;
+      grid-template-areas: "header" "content" ".";
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  overflow: hidden;
 }
 
 @media (max-width: 479px) {
   #app-container .app-page {
-    -ms-grid-rows: 4em 3em 1fr 3em;
-        grid-template-rows: 4em 3em 1fr 3em;
+    -ms-grid-rows: 3em 1fr 3em;
+        grid-template-rows: 3em 1fr 3em;
   }
 }
 
 #app-container .page-header {
-  -ms-grid-row: 2;
+  -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: header;
   text-align: center;
@@ -986,7 +1038,7 @@ body {
 }
 
 #app-container .page-content {
-  -ms-grid-row: 3;
+  -ms-grid-row: 2;
   -ms-grid-column: 1;
   grid-area: content;
   max-width: 90vw;

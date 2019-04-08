@@ -19,6 +19,13 @@ import helmetLogo from "../assets/svg/helmet.svg";
 import pugLogo from "../assets/svg/pug_mono.svg";
 import typescriptLogo from "../assets/svg/typescript.svg";
 import angularLogo from "../assets/svg/angular.svg";
+import jasmineLogo from "../assets/svg/jasmine.svg";
+import karmaLogo from "../assets/svg/karma.svg";
+import npmLogo from "../assets/svg/npm.svg";
+import gitLogo from "../assets/svg/git.svg";
+import gcpLogo from "../assets/svg/gcp.svg";
+import awsLogo from "../assets/svg/aws.svg";
+import pythonLogo from "../assets/svg/python.svg";
 
 export {
   htmlLogo,
@@ -41,5 +48,12 @@ export {
   helmetLogo,
   pugLogo,
   typescriptLogo,
-  angularLogo
+  angularLogo,
+  jasmineLogo,
+  karmaLogo,
+  npmLogo,
+  gitLogo,
+  gcpLogo,
+  awsLogo,
+  pythonLogo
 };

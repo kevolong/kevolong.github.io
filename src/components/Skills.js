@@ -21,7 +21,14 @@ import {
   helmetLogo,
   pugLogo,
   typescriptLogo,
-  angularLogo
+  angularLogo,
+  jasmineLogo,
+  karmaLogo,
+  npmLogo,
+  gitLogo,
+  gcpLogo,
+  awsLogo,
+  pythonLogo
 } from "../data/svgLogos.js";
 
 class Skills extends Component {
@@ -106,61 +113,104 @@ class Skills extends Component {
               {/* end icon-row */}
             </div>{" "}
             {/* end Front End section */}
-            {/* Back End */}
-            <div id="back-end-section" className="skill-section animated fadeInRight faster">
-              <h2>Back End</h2>
-              {/* Node Mongo QA icon-row */}
-              <div className="icon-row">
-                {/* Node Express Mongo icon-col */}
-                <div className="icon-col">
+            <div id="back-and-dev-grid">
+              {" "}
+              {/* Back End */}
+              <div id="back-end-section" className="skill-section animated fadeInRight faster">
+                <h2>Back End</h2>
+                {/* Node Mongo QA icon-row */}
+                <div className="icon-row">
+                  {/* Node Express Mongo icon-col */}
+                  <div className="icon-col">
+                    <div className="icon-set">
+                      <img className="icon" src={nodeLogo} alt="" />
+                      <h4>Node.js</h4>
+                    </div>
+                    <div className="icon-set">
+                      <img className="icon" src={expressLogo} alt="" />
+                      <h4>Express</h4>
+                    </div>
+                    <div className="icon-set">
+                      <img className="icon" src={mongoLogo} alt="" />
+                      <h4>MongoDB</h4>
+                    </div>
+                    <div className="icon-set">
+                      <img className="icon" src={pythonLogo} alt="" />
+                      <h4>Python</h4>
+                    </div>
+                  </div>
+                </div>{" "}
+                {/* end icon-row */}
+                {/* Info Security icon-row */}
+                <div className="icon-row">
                   <div className="icon-set">
-                    <img className="icon" src={nodeLogo} alt="" />
-                    <h4>Node.js</h4>
+                    <img className="icon" src={socketLogo} alt="" />
+                    <h4>Socket-IO</h4>
                   </div>
                   <div className="icon-set">
-                    <img className="icon" src={expressLogo} alt="" />
-                    <h4>Express</h4>
+                    <img className="icon" src={passportLogo} alt="" />
+                    <h4>Passport</h4>
                   </div>
                   <div className="icon-set">
-                    <img className="icon" src={mongoLogo} alt="" />
-                    <h4>MongoDB</h4>
-                  </div>
-                </div>
-                {/* QA icon-col */}
-                <div className="icon-col">
-                  <div className="icon-set">
-                    <img className="icon" src={mochaLogo} alt="" />
-                    <h4>Mocha</h4>
+                    <img className="icon" src={helmetLogo} alt="" />
+                    <h4>Helmet</h4>
                   </div>
                   <div className="icon-set">
-                    <img className="icon" src={chaiLogo} alt="" />
-                    <h4>Chai</h4>
+                    <img className="icon" src={pugLogo} alt="" />
+                    <h4>Pug</h4>
                   </div>
-                </div>
+                </div>{" "}
+                {/* end icon-row */}
               </div>{" "}
-              {/* end icon-row */}
-              {/* Info Security icon-row */}
-              <div className="icon-row">
-                <div className="icon-set">
-                  <img className="icon" src={socketLogo} alt="" />
-                  <h4>Socket-IO</h4>
-                </div>
-                <div className="icon-set">
-                  <img className="icon" src={passportLogo} alt="" />
-                  <h4>Passport</h4>
-                </div>
-                <div className="icon-set">
-                  <img className="icon" src={helmetLogo} alt="" />
-                  <h4>Helmet</h4>
-                </div>
-                <div className="icon-set">
-                  <img className="icon" src={pugLogo} alt="" />
-                  <h4>Pug</h4>
-                </div>
+              {/* end Back End section */}
+              <div id="dev-section" className="skill-section animated fadeInRight faster">
+                <h2>Development & Testing</h2>
+                {/* dev icon-row */}
+                <div className="icon-row">
+                  <div className="icon-set">
+                    <img className="icon" src={npmLogo} alt="" />
+                    <h4>npm</h4>
+                  </div>
+                  <div className="icon-set">
+                    <img className="icon" src={gitLogo} alt="" />
+                    <h4>Git</h4>
+                  </div>
+                  <div className="icon-set">
+                    <img className="icon" src={gcpLogo} alt="" />
+                    <h4>GCP</h4>
+                  </div>
+                  <div className="icon-set">
+                    <img className="icon" src={awsLogo} alt="" />
+                    <h4>AWS</h4>
+                  </div>
+                </div>{" "}
+                {/* end icon-row */}
+                {/* QA icon-row */}
+                <div className="icon-row">
+                  {/* QA icon-col */}
+                  <div className="icon-col">
+                    <div className="icon-set">
+                      <img className="icon" src={mochaLogo} alt="" />
+                      <h4>Mocha</h4>
+                    </div>
+                    <div className="icon-set">
+                      <img className="icon" src={chaiLogo} alt="" />
+                      <h4>Chai</h4>
+                    </div>
+                    <div className="icon-set">
+                      <img className="icon" src={jasmineLogo} alt="" />
+                      <h4>Jasmine</h4>
+                    </div>
+                    <div className="icon-set">
+                      <img className="icon" src={karmaLogo} alt="" />
+                      <h4>Karma</h4>
+                    </div>
+                  </div>
+                </div>{" "}
+                {/* end icon-row */}
               </div>{" "}
-              {/* end icon-row */}
-            </div>{" "}
-            {/* end Back End section */}
+              {/* end Development & Testing section */}
+            </div>
           </div>
         </div>{" "}
         {/* end page content */}

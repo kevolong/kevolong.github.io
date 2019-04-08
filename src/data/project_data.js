@@ -40,6 +40,13 @@ import fscalc1 from "../assets/images/previews/fscalc_icon_cropped.jpg";
 import fscalc2 from "../assets/images/previews/fscalc_footage_cropped.jpg";
 import fscalc3 from "../assets/images/previews/fscalc_space_cropped.jpg";
 import fscalc4 from "../assets/images/previews/fscalc_info_cropped.jpg";
+import rep1 from "../assets/images/previews/rep-review_brand silver_cropped.jpg";
+import rep2 from "../assets/images/previews/rep_home_cropped.jpg";
+import rep3 from "../assets/images/previews/rep_1rm_cropped.jpg";
+import rep4 from "../assets/images/previews/rep_benchmark_cropped.jpg";
+import rep5 from "../assets/images/previews/rep_chart_cropped.jpg";
+import rep6 from "../assets/images/previews/rep_faq_cropped.jpg";
+import rep7 from "../assets/images/previews/rep_formulas_cropped.jpg";
 
 /* Unused
 import fscalc5 from "../assets/images/previews/fscalc_custom_cropped.jpg";
@@ -55,11 +62,20 @@ import placeholder from "../assets/images/previews/placeholder.jpg";
 
 const frontEndProjects = [
   {
+    title: "Rep Review",
+    pics: [rep1, rep2, rep3, rep4, rep5, rep6, rep7],
+    desc:
+      "Rep Review helps weightlifters calculate their theoretical one-rep-max, rep ranges, and compare to benchmark standards.",
+    skills: ["Angular", "Typescript", "HTML/Sass", "Jasmine/Karma"],
+    url: "https://rep-review.com",
+    code: "https://github.com/kevolong/Rep-Review/tree/gh-pages/src"
+  },
+  {
     title: "fsCALC",
     pics: [fscalc1, fscalc2, fscalc3, fscalc4],
     desc:
       "Footage Size Calculator estimates how much space video footage will take, or how much footage can fit into a space.",
-    skills: ["Angular", "Typescript", "HTML/SASS"],
+    skills: ["Angular", "Typescript", "HTML/Sass"],
     url: "https://footagecalc.com",
     code: "https://github.com/kevolong/fsCALC/tree/gh-pages/src"
   },
@@ -103,7 +119,7 @@ const frontEndProjects = [
     title: "jsDOC",
     pics: [doc1, doc2, doc3],
     desc: "Sample technical documentation with responsive navigation menu.",
-    skills: ["HTML/SASS"],
+    skills: ["HTML/Sass"],
     url: "https://kevolong.github.io/jsDOC/",
     code: "https://github.com/kevolong/jsDOC"
   }
@@ -115,7 +131,7 @@ const fullStackProjects = [
     pics: [trivia1, trivia2, trivia3, trivia4, trivia5, trivia6, trivia7],
     desc:
       "A Love Actually trivia game. 10 questions chosen at random from the server but balanced for difficulty. Scores and IPs are stored in a MongoDB for ranking and QA.",
-    skills: ["React", "Node.js", "Express", "MongoDB", "Pug", "Mocha", "HTML/SASS"],
+    skills: ["React", "Node.js", "Express", "MongoDB", "Pug", "Mocha", "HTML/Sass"],
     url: "https://triviaactually.com",
     code: "https://github.com/kevolong/TriviaActually"
   },
@@ -124,7 +140,7 @@ const fullStackProjects = [
     pics: [metimp1, metimp2, metimp3, metimp4, metimp5],
     desc:
       "Metric/Imperial Converter is a REST API with a front-end app that converts between popular metric and imperial units.",
-    skills: ["Node.js", "Express", "jQuery", "Helmet", "Mocha/Chai/Zombie", "HTML/SASS"],
+    skills: ["Node.js", "Express", "jQuery", "Helmet", "Mocha/Chai/Zombie", "HTML/Sass"],
     url: "https://fcc-metimp-convert-kl.glitch.me/",
     code: "https://github.com/kevolong/Metric-Imperial-Convert"
   },
@@ -141,7 +157,7 @@ const fullStackProjects = [
       "Helmet",
       "Mocha/Chai/Zombie",
       "Bootstrap",
-      "HTML/SASS"
+      "HTML/Sass"
     ],
     url: "https://fcc-anonboard-kl.glitch.me/",
     code: "https://github.com/kevolong/AnonBoard"

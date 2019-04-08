@@ -235,12 +235,17 @@ $card-color: $content-color;
       display: flex;
       align-items: center;
       justify-content: center;
-      z-index: 1;
+      z-index: 99;
       left: 0;
       top: 0;
       width: 100%;
       height: 100%;
       background-color: rgba(0, 0, 0, 0.6); /* Black w/ opacity */
+
+      @media screen and (max-width: 479px) {
+        align-items: flex-start;
+        margin-top: $nav-height;
+      }
 
       //Card
       .full-card {
@@ -254,8 +259,18 @@ $card-color: $content-color;
         border: 1px solid $card-color;
         box-shadow: 0px 0px 12px 4px rgba(0, 32, 84, 0.75);
 
+        @media screen and (max-width: 479px) {
+          margin-top: 1em;
+        }
+
         @media (max-width: 375px) {
           max-width: 300px;
+        }
+
+        .card-pics {
+          @media screen and (max-width: 479px) {
+            max-height: 200px;
+          }
         }
 
         //All text

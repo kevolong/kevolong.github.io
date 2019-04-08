@@ -18,7 +18,20 @@ $font-color-skills: $content-color;
     display: grid;
     justify-content: center;
     grid-template-rows: auto auto;
-    row-gap: 3em;
+    grid-gap: 4em;
+
+    #back-and-dev-grid {
+      display: grid;
+      justify-content: center;
+      grid-template-columns: auto auto;
+      grid-gap: 3em;
+
+      @media screen and (max-width: 950px) {
+        grid-template-columns: auto;
+        grid-template-rows: auto auto;
+        grid-gap: 3em;
+      }
+    }
   }
 
   //Section for each icon-row with header

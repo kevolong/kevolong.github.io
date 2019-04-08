@@ -17,7 +17,7 @@ class About extends Component {
           <h5>(well...only some)</h5>
         </div>
         <div id="about-content" className="page-content">
-          <div id="about-sidebar" className="animated fadeInLeft faster">
+          <div id="about-sidebar" className="animated fadeInRight faster">
             <img src={kevinPic} alt="" />
             <div id="about-facts">
               <div className="fact-set">
@@ -93,7 +93,7 @@ class About extends Component {
             </div>
           </div>
 
-          <div id="about-info" className="animated fadeInRight faster">
+          <div id="about-info" className="animated fadeInLeft faster">
             <p>
               I've been flirting with coding since high school, and finally decided to get serious
               after a long career as a film and television editor. I love to solve puzzles, build

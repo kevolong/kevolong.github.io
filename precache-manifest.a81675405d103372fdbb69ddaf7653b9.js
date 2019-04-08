@@ -4,12 +4,12 @@ self.__precacheManifest = [
     "url": "/kevolong.github.io/static/media/dViz_logo.9a7562c5.jpg"
   },
   {
-    "revision": "0feeaeb0e81e398ef195",
-    "url": "/kevolong.github.io/static/js/main.0feeaeb0.chunk.js"
+    "revision": "ae95ad63f9529f9336c3",
+    "url": "/kevolong.github.io/static/js/main.ae95ad63.chunk.js"
   },
   {
-    "revision": "c4d1eabf164aeaf2cd034b36c72f5a97",
-    "url": "/kevolong.github.io/static/media/fscalc_info_cropped.c4d1eabf.jpg"
+    "revision": "f6793ba689016bbc9770c1d20fbe5e47",
+    "url": "/kevolong.github.io/static/media/rep_formulas_cropped.f6793ba6.jpg"
   },
   {
     "revision": "96c2b490d38c299d3ba3927557641a55",
@@ -98,6 +98,34 @@ self.__precacheManifest = [
   {
     "revision": "6972c046518cbff7c8adc517c0e22133",
     "url": "/kevolong.github.io/static/media/angular.6972c046.svg"
+  },
+  {
+    "revision": "714d72184d174e4de33da9d9b2748a9c",
+    "url": "/kevolong.github.io/static/media/jasmine.714d7218.svg"
+  },
+  {
+    "revision": "88722c4b97c756fea5f9ff4c049d8d32",
+    "url": "/kevolong.github.io/static/media/karma.88722c4b.svg"
+  },
+  {
+    "revision": "6f7aeee8bb8ee61edfd134eef3152e22",
+    "url": "/kevolong.github.io/static/media/npm.6f7aeee8.svg"
+  },
+  {
+    "revision": "8293ecba30bc7abefa68949e3a20ad7b",
+    "url": "/kevolong.github.io/static/media/git.8293ecba.svg"
+  },
+  {
+    "revision": "2fea53a77bf008e5e2f9a9948965d36d",
+    "url": "/kevolong.github.io/static/media/gcp.2fea53a7.svg"
+  },
+  {
+    "revision": "3ec1472f9cd09e285662c6a93b890bfe",
+    "url": "/kevolong.github.io/static/media/aws.3ec1472f.svg"
+  },
+  {
+    "revision": "217eb8eae80b0abb230c1d7d9b540920",
+    "url": "/kevolong.github.io/static/media/python.217eb8ea.svg"
   },
   {
     "revision": "08f69cea3cbd110bf7cdc79a699ff7e2",
@@ -268,11 +296,39 @@ self.__precacheManifest = [
     "url": "/kevolong.github.io/static/media/fscalc_space_cropped.c63080a3.jpg"
   },
   {
-    "revision": "766bc1b7564bc5ccd2ad",
-    "url": "/kevolong.github.io/static/js/2.766bc1b7.chunk.js"
+    "revision": "c4d1eabf164aeaf2cd034b36c72f5a97",
+    "url": "/kevolong.github.io/static/media/fscalc_info_cropped.c4d1eabf.jpg"
   },
   {
-    "revision": "5cbdc26145d3124d9d1a7ce929f3c746",
+    "revision": "8d9bcdf316091b63afc4aa3fc848f54e",
+    "url": "/kevolong.github.io/static/media/rep-review_brand silver_cropped.8d9bcdf3.jpg"
+  },
+  {
+    "revision": "9638e6ca7bffddfd788593c122885831",
+    "url": "/kevolong.github.io/static/media/rep_home_cropped.9638e6ca.jpg"
+  },
+  {
+    "revision": "9176ac33c42f983dd08df61386a8ed8a",
+    "url": "/kevolong.github.io/static/media/rep_1rm_cropped.9176ac33.jpg"
+  },
+  {
+    "revision": "578de4cb5237e909c6dfad7c75eb018a",
+    "url": "/kevolong.github.io/static/media/rep_benchmark_cropped.578de4cb.jpg"
+  },
+  {
+    "revision": "0b28206bf52b08b4c845062dd97dba94",
+    "url": "/kevolong.github.io/static/media/rep_chart_cropped.0b28206b.jpg"
+  },
+  {
+    "revision": "2175b97cd36033cb4b8f2644fff19f2b",
+    "url": "/kevolong.github.io/static/media/rep_faq_cropped.2175b97c.jpg"
+  },
+  {
+    "revision": "f2778614e383b8f88007",
+    "url": "/kevolong.github.io/static/js/2.f2778614.chunk.js"
+  },
+  {
+    "revision": "3279402c4f88ae194a07e1626effcd02",
     "url": "/kevolong.github.io/index.html"
   }
 ];
