@@ -213,27 +213,6 @@
   grid-gap: 4em;
 }
 
-#skills-page .skill-grid #back-and-dev-grid {
-  display: -ms-grid;
-  display: grid;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -ms-grid-columns: auto auto;
-      grid-template-columns: auto auto;
-  grid-gap: 3em;
-}
-
-@media screen and (max-width: 950px) {
-  #skills-page .skill-grid #back-and-dev-grid {
-    -ms-grid-columns: auto;
-        grid-template-columns: auto;
-    -ms-grid-rows: auto auto;
-        grid-template-rows: auto auto;
-    grid-gap: 3em;
-  }
-}
-
 #skills-page .skill-section {
   display: -ms-grid;
   display: grid;

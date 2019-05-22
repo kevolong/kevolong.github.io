@@ -5,7 +5,6 @@ import {
   cssLogo,
   sassLogo,
   bootstrapLogo,
-  materializeLogo,
   psLogo,
   jsLogo,
   reactLogo,
@@ -28,7 +27,17 @@ import {
   gitLogo,
   gcpLogo,
   awsLogo,
-  pythonLogo
+  pythonLogo,
+  javaLogo,
+  springLogo,
+  hibernateLogo,
+  thymeleafLogo,
+  mysqlLogo,
+  mavenLogo,
+  tomcatLogo,
+  bcryptLogo,
+  bootLogo,
+  jspLogo
 } from "../data/svgLogos.js";
 
 class Skills extends Component {
@@ -65,10 +74,6 @@ class Skills extends Component {
                   <div className="icon-set">
                     <img className="icon" src={bootstrapLogo} alt="" />
                     <h4>Bootstrap</h4>
-                  </div>
-                  <div className="icon-set">
-                    <img className="icon" src={materializeLogo} alt="" />
-                    <h4>Materialize</h4>
                   </div>
                   <div className="icon-set">
                     <img className="icon" src={psLogo} alt="" />
@@ -112,37 +117,47 @@ class Skills extends Component {
               </div>{" "}
               {/* end icon-row */}
             </div>{" "}
-            {/* end Front End section */}
-            <div id="back-and-dev-grid">
-              {" "}
-              {/* Back End */}
-              <div id="back-end-section" className="skill-section animated fadeInRight faster">
-                <h2>Back End</h2>
-                {/* Node Mongo QA icon-row */}
-                <div className="icon-row">
-                  {/* Node Express Mongo icon-col */}
-                  <div className="icon-col">
-                    <div className="icon-set">
-                      <img className="icon" src={nodeLogo} alt="" />
-                      <h4>Node.js</h4>
-                    </div>
-                    <div className="icon-set">
-                      <img className="icon" src={expressLogo} alt="" />
-                      <h4>Express</h4>
-                    </div>
-                    <div className="icon-set">
-                      <img className="icon" src={mongoLogo} alt="" />
-                      <h4>MongoDB</h4>
-                    </div>
-                    <div className="icon-set">
-                      <img className="icon" src={pythonLogo} alt="" />
-                      <h4>Python</h4>
-                    </div>
+            {/* end Front End section */} {/* Back End */}
+            <div id="back-end-section" className="skill-section animated fadeInRight faster">
+              <h2>Back End</h2>
+              {/* Language Row icon-row */}
+              <div className="icon-row">
+                {/* Node Express Python icon-col */}
+                <div className="icon-col">
+                  <div className="icon-set">
+                    <img className="icon" src={nodeLogo} alt="" />
+                    <h4>Node.js</h4>
                   </div>
-                </div>{" "}
-                {/* end icon-row */}
-                {/* Info Security icon-row */}
-                <div className="icon-row">
+                  <div className="icon-set">
+                    <img className="icon" src={expressLogo} alt="" />
+                    <h4>Express</h4>
+                  </div>
+                  <div className="icon-set">
+                    <img className="icon" src={pythonLogo} alt="" />
+                    <h4>Python</h4>
+                  </div>
+                </div>
+                {/* Java Spring MySQL icon-col */}
+                <div className="icon-col">
+                  <div className="icon-set">
+                    <img className="icon" src={javaLogo} alt="" />
+                    <h4>Java</h4>
+                  </div>
+                  <div className="icon-set">
+                    <img className="icon" src={springLogo} alt="" />
+                    <h4>Spring</h4>
+                  </div>
+                  <div className="icon-set">
+                    <img className="icon" src={tomcatLogo} alt="" />
+                    <h4>Tomcat</h4>
+                  </div>
+                </div>
+              </div>{" "}
+              {/* end icon-row */}
+              {/* Info Security & Template icon-row */}
+              <div className="icon-row">
+                {/* Info Security icon-col */}
+                <div className="icon-col">
                   <div className="icon-set">
                     <img className="icon" src={socketLogo} alt="" />
                     <h4>Socket-IO</h4>
@@ -155,22 +170,69 @@ class Skills extends Component {
                     <img className="icon" src={helmetLogo} alt="" />
                     <h4>Helmet</h4>
                   </div>
+                </div>
+                {/* Template icon-col */}
+                <div className="icon-col">
                   <div className="icon-set">
                     <img className="icon" src={pugLogo} alt="" />
                     <h4>Pug</h4>
                   </div>
-                </div>{" "}
-                {/* end icon-row */}
+                  <div className="icon-set">
+                    <img className="icon" src={thymeleafLogo} alt="" />
+                    <h4>Thymeleaf</h4>
+                  </div>
+                  <div className="icon-set">
+                    <img className="icon" src={jspLogo} alt="" />
+                    <h4>JSP</h4>
+                  </div>
+                </div>
+              </div>{" "}
+              {/* end icon-row */}
+              {/* DB icon-row */}
+              <div className="icon-row">
+                {/* DB icon-col */}
+                <div className="icon-col">
+                  <div className="icon-set">
+                    <img className="icon" src={mongoLogo} alt="" />
+                    <h4>MongoDB</h4>
+                  </div>
+                  <div className="icon-set">
+                    <img className="icon" src={mysqlLogo} alt="" />
+                    <h4>MySQL</h4>
+                  </div>
+                  <div className="icon-set">
+                    <img className="icon" src={hibernateLogo} alt="" />
+                    <h4>Hibernate</h4>
+                  </div>
+                  <div className="icon-set">
+                    <img className="icon" src={bcryptLogo} alt="" />
+                    <h4>BCrypt</h4>
+                  </div>
+                </div>
               </div>{" "}
               {/* end Back End section */}
-              <div id="dev-section" className="skill-section animated fadeInRight faster">
-                <h2>Development & Testing</h2>
-                {/* dev icon-row */}
-                <div className="icon-row">
+            </div>{" "}
+            <div id="dev-section" className="skill-section animated fadeInRight faster">
+              <h2>Development & Testing</h2>
+              {/* dev icon-row */}
+              <div className="icon-row">
+                {/* Dependencies icon-col */}
+                <div className="icon-col">
                   <div className="icon-set">
                     <img className="icon" src={npmLogo} alt="" />
                     <h4>npm</h4>
                   </div>
+                  <div className="icon-set">
+                    <img className="icon" src={mavenLogo} alt="" />
+                    <h4>Maven</h4>
+                  </div>
+                  <div className="icon-set">
+                    <img className="icon" src={bootLogo} alt="" />
+                    <h4>Spring Boot</h4>
+                  </div>
+                </div>
+                {/* Cloud icon-col */}
+                <div className="icon-col">
                   <div className="icon-set">
                     <img className="icon" src={gitLogo} alt="" />
                     <h4>Git</h4>
@@ -183,34 +245,34 @@ class Skills extends Component {
                     <img className="icon" src={awsLogo} alt="" />
                     <h4>AWS</h4>
                   </div>
-                </div>{" "}
-                {/* end icon-row */}
-                {/* QA icon-row */}
-                <div className="icon-row">
-                  {/* QA icon-col */}
-                  <div className="icon-col">
-                    <div className="icon-set">
-                      <img className="icon" src={mochaLogo} alt="" />
-                      <h4>Mocha</h4>
-                    </div>
-                    <div className="icon-set">
-                      <img className="icon" src={chaiLogo} alt="" />
-                      <h4>Chai</h4>
-                    </div>
-                    <div className="icon-set">
-                      <img className="icon" src={jasmineLogo} alt="" />
-                      <h4>Jasmine</h4>
-                    </div>
-                    <div className="icon-set">
-                      <img className="icon" src={karmaLogo} alt="" />
-                      <h4>Karma</h4>
-                    </div>
-                  </div>
-                </div>{" "}
-                {/* end icon-row */}
+                </div>
               </div>{" "}
-              {/* end Development & Testing section */}
-            </div>
+              {/* end icon-row */}
+              {/* QA icon-row */}
+              <div className="icon-row">
+                {/* QA icon-col */}
+                <div className="icon-col">
+                  <div className="icon-set">
+                    <img className="icon" src={mochaLogo} alt="" />
+                    <h4>Mocha</h4>
+                  </div>
+                  <div className="icon-set">
+                    <img className="icon" src={chaiLogo} alt="" />
+                    <h4>Chai</h4>
+                  </div>
+                  <div className="icon-set">
+                    <img className="icon" src={jasmineLogo} alt="" />
+                    <h4>Jasmine</h4>
+                  </div>
+                  <div className="icon-set">
+                    <img className="icon" src={karmaLogo} alt="" />
+                    <h4>Karma</h4>
+                  </div>
+                </div>
+              </div>{" "}
+              {/* end icon-row */}
+            </div>{" "}
+            {/* end Development & Testing section */}
           </div>
         </div>{" "}
         {/* end page content */}
