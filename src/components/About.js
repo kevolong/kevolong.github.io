@@ -102,10 +102,10 @@ class About extends Component {
               stops running. Development is where I've found the perfect balance.
             </p>
             <p>
-              My career in Hollywood gave me the skills and experience invaluable to development:
-              collaborating with teams, constantly learning new technology, continuously growing my
-              skill set, organizing and managing projects so anyone can effortlessly step in,
-              working with clients and figuring out what they really want.
+              I'm currently a Senior Salesforce Developer for Accenture Federal Services on their 
+              internal org with seven Salesforce apps. In addition to coding, testing and maintaining 
+              complex Apex, Aura, LWC, Visualforce, Process Builder, and Flows, I manage junior devs,
+              run deployments, author documentation, and automate dummy data generation with scripts.
             </p>
             <p>
               I approach every project with fresh eyes while keeping in mind the valuable experience

@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "32ddcbc0826e9e26bb4ad463753462a9",
-    "url": "/kevolong.github.io/static/media/weather_clouds-night_cropped.32ddcbc0.jpg"
+    "revision": "52ebeb0c6658ef150967cb1f34af2309",
+    "url": "/kevolong.github.io/static/media/weather_rain_cropped.52ebeb0c.jpg"
   },
   {
-    "revision": "43e058016404f5ecbc33",
-    "url": "/kevolong.github.io/static/js/main.43e05801.chunk.js"
+    "revision": "799e38473f93d0313360",
+    "url": "/kevolong.github.io/static/js/main.799e3847.chunk.js"
   },
   {
     "revision": "f6793ba689016bbc9770c1d20fbe5e47",
@@ -168,6 +168,14 @@ self.__precacheManifest = [
     "url": "/kevolong.github.io/static/media/jsp_alt.d9e300ba.svg"
   },
   {
+    "revision": "a70291b8a096b320e8e39e75864bd1e6",
+    "url": "/kevolong.github.io/static/media/salesforce.a70291b8.svg"
+  },
+  {
+    "revision": "0e2e36a6626a2d1a82c4136591ec0cee",
+    "url": "/kevolong.github.io/static/media/powershell_black.0e2e36a6.svg"
+  },
+  {
     "revision": "08f69cea3cbd110bf7cdc79a699ff7e2",
     "url": "/kevolong.github.io/static/media/kevin-colorado-wedding.08f69cea.jpg"
   },
@@ -180,12 +188,12 @@ self.__precacheManifest = [
     "url": "/kevolong.github.io/static/media/weather_broken-clouds_cropped2.a61d2a59.jpg"
   },
   {
-    "revision": "52ebeb0c6658ef150967cb1f34af2309",
-    "url": "/kevolong.github.io/static/media/weather_rain_cropped.52ebeb0c.jpg"
-  },
-  {
     "revision": "59788aab6b0f1fb7465e",
     "url": "/kevolong.github.io/static/js/runtime~main.59788aab.js"
+  },
+  {
+    "revision": "32ddcbc0826e9e26bb4ad463753462a9",
+    "url": "/kevolong.github.io/static/media/weather_clouds-night_cropped.32ddcbc0.jpg"
   },
   {
     "revision": "9046799ac7ca3ea9ca6d3076a0de2d23",
@@ -364,11 +372,11 @@ self.__precacheManifest = [
     "url": "/kevolong.github.io/static/media/rep_faq_cropped.2175b97c.jpg"
   },
   {
-    "revision": "e6e8a062d4f3d82622ea",
-    "url": "/kevolong.github.io/static/js/2.e6e8a062.chunk.js"
+    "revision": "dfdffdc2f0e8f2841e41",
+    "url": "/kevolong.github.io/static/js/2.dfdffdc2.chunk.js"
   },
   {
-    "revision": "bba45d1379a3836cfac7f92cf990653c",
+    "revision": "17ef5ba84e349059cac1f1e39e923f51",
     "url": "/kevolong.github.io/index.html"
   }
 ];

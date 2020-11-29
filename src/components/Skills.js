@@ -15,10 +15,6 @@ import {
   mongoLogo,
   mochaLogo,
   chaiLogo,
-  socketLogo,
-  passportLogo,
-  helmetLogo,
-  pugLogo,
   typescriptLogo,
   angularLogo,
   jasmineLogo,
@@ -31,13 +27,10 @@ import {
   javaLogo,
   springLogo,
   hibernateLogo,
-  thymeleafLogo,
   mysqlLogo,
   mavenLogo,
-  tomcatLogo,
-  bcryptLogo,
-  bootLogo,
-  jspLogo
+  salesforceLogo,
+  powershellLogo
 } from "../data/svgLogos.js";
 
 class Skills extends Component {
@@ -120,7 +113,7 @@ class Skills extends Component {
             {/* end Front End section */} {/* Back End */}
             <div id="back-end-section" className="skill-section animated fadeInRight faster">
               <h2>Back End</h2>
-              {/* Language Row icon-row */}
+              {/* JS Row icon-row */}
               <div className="icon-row">
                 {/* Node Express Python icon-col */}
                 <div className="icon-col">
@@ -136,7 +129,15 @@ class Skills extends Component {
                     <img className="icon" src={pythonLogo} alt="" />
                     <h4>Python</h4>
                   </div>
+                  <div className="icon-set">
+                    <img className="icon" src={powershellLogo} alt="" />
+                    <h4>Powershell</h4>
+                  </div>
                 </div>
+              </div>{" "}
+              {/* end icon-row */}
+              {/* Java Row icon-row */}
+              <div className="icon-row">
                 {/* Java Spring MySQL icon-col */}
                 <div className="icon-col">
                   <div className="icon-set">
@@ -148,45 +149,11 @@ class Skills extends Component {
                     <h4>Spring</h4>
                   </div>
                   <div className="icon-set">
-                    <img className="icon" src={tomcatLogo} alt="" />
-                    <h4>Tomcat</h4>
+                    <img className="icon" src={salesforceLogo} alt="" />
+                    <h4>Salesforce</h4>
                   </div>
                 </div>
-              </div>{" "}
-              {/* end icon-row */}
-              {/* Info Security & Template icon-row */}
-              <div className="icon-row">
-                {/* Info Security icon-col */}
-                <div className="icon-col">
-                  <div className="icon-set">
-                    <img className="icon" src={socketLogo} alt="" />
-                    <h4>Socket-IO</h4>
-                  </div>
-                  <div className="icon-set">
-                    <img className="icon" src={passportLogo} alt="" />
-                    <h4>Passport</h4>
-                  </div>
-                  <div className="icon-set">
-                    <img className="icon" src={helmetLogo} alt="" />
-                    <h4>Helmet</h4>
-                  </div>
-                </div>
-                {/* Template icon-col */}
-                <div className="icon-col">
-                  <div className="icon-set">
-                    <img className="icon" src={pugLogo} alt="" />
-                    <h4>Pug</h4>
-                  </div>
-                  <div className="icon-set">
-                    <img className="icon" src={thymeleafLogo} alt="" />
-                    <h4>Thymeleaf</h4>
-                  </div>
-                  <div className="icon-set">
-                    <img className="icon" src={jspLogo} alt="" />
-                    <h4>JSP</h4>
-                  </div>
-                </div>
-              </div>{" "}
+              </div>
               {/* end icon-row */}
               {/* DB icon-row */}
               <div className="icon-row">
@@ -203,10 +170,6 @@ class Skills extends Component {
                   <div className="icon-set">
                     <img className="icon" src={hibernateLogo} alt="" />
                     <h4>Hibernate</h4>
-                  </div>
-                  <div className="icon-set">
-                    <img className="icon" src={bcryptLogo} alt="" />
-                    <h4>BCrypt</h4>
                   </div>
                 </div>
               </div>{" "}
@@ -225,10 +188,6 @@ class Skills extends Component {
                   <div className="icon-set">
                     <img className="icon" src={mavenLogo} alt="" />
                     <h4>Maven</h4>
-                  </div>
-                  <div className="icon-set">
-                    <img className="icon" src={bootLogo} alt="" />
-                    <h4>Spring Boot</h4>
                   </div>
                 </div>
                 {/* Cloud icon-col */}

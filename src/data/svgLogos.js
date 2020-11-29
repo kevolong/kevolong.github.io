@@ -26,6 +26,18 @@ import gitLogo from "../assets/svg/git.svg";
 import gcpLogo from "../assets/svg/gcp.svg";
 import awsLogo from "../assets/svg/aws.svg";
 import pythonLogo from "../assets/svg/python.svg";
+import javaLogo from "../assets/svg/java.svg";
+import springLogo from "../assets/svg/spring.svg";
+import hibernateLogo from "../assets/svg/hibernate.svg";
+import thymeleafLogo from "../assets/svg/thymeleaf.svg";
+import mysqlLogo from "../assets/svg/mysql.svg";
+import mavenLogo from "../assets/svg/maven.svg";
+import tomcatLogo from "../assets/svg/tomcat.svg";
+import bcryptLogo from "../assets/svg/bcrypt.svg";
+import bootLogo from "../assets/svg/spring-boot.svg";
+import jspLogo from "../assets/svg/jsp_alt.svg";
+import salesforceLogo from "../assets/svg/salesforce.svg";
+import powershellLogo from "../assets/svg/powershell_black.svg";
 
 export {
   htmlLogo,
@@ -55,5 +67,17 @@ export {
   gitLogo,
   gcpLogo,
   awsLogo,
-  pythonLogo
+  pythonLogo,
+  javaLogo,
+  springLogo,
+  hibernateLogo,
+  thymeleafLogo,
+  mysqlLogo,
+  mavenLogo,
+  tomcatLogo,
+  bcryptLogo,
+  bootLogo,
+  jspLogo,
+  salesforceLogo,
+  powershellLogo
 };

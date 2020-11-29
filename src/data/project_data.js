@@ -134,33 +134,6 @@ const fullStackProjects = [
     skills: ["React", "Node.js", "Express", "MongoDB", "Pug", "Mocha", "HTML/Sass"],
     url: "https://triviaactually.com",
     code: "https://github.com/kevolong/TriviaActually"
-  },
-  {
-    title: "Metric/Imperial Converter",
-    pics: [metimp1, metimp2, metimp3, metimp4, metimp5],
-    desc:
-      "Metric/Imperial Converter is a REST API with a front-end app that converts between popular metric and imperial units.",
-    skills: ["Node.js", "Express", "jQuery", "Helmet", "Mocha/Chai/Zombie", "HTML/Sass"],
-    url: "https://fcc-metimp-convert-kl.glitch.me/",
-    code: "https://github.com/kevolong/Metric-Imperial-Convert"
-  },
-  {
-    title: "AnonBoard",
-    pics: [anon1, anon2, anon3, anon4, anon5, anon6],
-    desc:
-      "Anonymous message board allowing any user to start a new board or thread, reply, report, or delete their own entry with a password.",
-    skills: [
-      "Node.js",
-      "Express",
-      "MongoDB/Mongoose",
-      "jQuery",
-      "Helmet",
-      "Mocha/Chai/Zombie",
-      "Bootstrap",
-      "HTML/Sass"
-    ],
-    url: "https://fcc-anonboard-kl.glitch.me/",
-    code: "https://github.com/kevolong/AnonBoard"
   }
 ];
 
@@ -194,6 +167,33 @@ const unused = [
       "Endless random quote generator with dynamic color themes that allows users to easily share on social media. Connects with Talaikis Quotes API.",
     skills: ["Javascript", "jQuery", "Bootstrap", "HTML/CSS"],
     url: "https://kevolong.github.io/RandomQuote/"
+  },
+  {
+    title: "Metric/Imperial Converter",
+    pics: [metimp1, metimp2, metimp3, metimp4, metimp5],
+    desc:
+      "Metric/Imperial Converter is a REST API with a front-end app that converts between popular metric and imperial units.",
+    skills: ["Node.js", "Express", "jQuery", "Helmet", "Mocha/Chai/Zombie", "HTML/Sass"],
+    url: "https://fcc-metimp-convert-kl.glitch.me/",
+    code: "https://github.com/kevolong/Metric-Imperial-Convert"
+  },
+  {
+    title: "AnonBoard",
+    pics: [anon1, anon2, anon3, anon4, anon5, anon6],
+    desc:
+      "Anonymous message board allowing any user to start a new board or thread, reply, report, or delete their own entry with a password.",
+    skills: [
+      "Node.js",
+      "Express",
+      "MongoDB/Mongoose",
+      "jQuery",
+      "Helmet",
+      "Mocha/Chai/Zombie",
+      "Bootstrap",
+      "HTML/Sass"
+    ],
+    url: "https://fcc-anonboard-kl.glitch.me/",
+    code: "https://github.com/kevolong/AnonBoard"
   }
 ];
 

@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 339 339" width="339" height="339">
+	<style>
+		tspan { white-space:pre }
+		.shp0 { fill: #1572b6 } 
+		.shp1 { fill: #33a9dc } 
+		.shp2 { fill: #ffffff } 
+		.shp3 { fill: #ebebeb } 
+	</style>
+	<g id="Page 1">
+		<g id="Layer_1">
+			<path id="Shape" class="shp0" d="M47.14,305.29l-27.07,-303.62h297.45l-27.1,303.57l-121.81,33.77z" />
+			<path id="Shape" class="shp1" d="M168.8,313.2l98.43,-27.29l23.16,-259.42h-121.58z" />
+			<g id="Group">
+				<path id="Shape" class="shp2" d="M168.8,136.5h49.28l3.4,-38.13h-52.68v-37.24h0.13h93.25l-0.89,9.99l-9.15,102.62h-83.33z" />
+				<path id="Shape" class="shp3" d="M169.02,233.2l-0.16,0.05l-41.47,-11.2l-2.65,-29.7h-20.15h-17.23l5.22,58.47l76.28,21.18l0.17,-0.05z" />
+				<path id="Shape" class="shp2" d="M214.91,172.16l-4.48,49.87l-41.53,11.21v38.74l76.34,-21.16l0.56,-6.29l6.48,-72.37z" />
+				<path id="Shape" class="shp3" d="M168.93,61.13v23.13v14.02v0.09h-89.83h-0.12l-0.75,-8.37l-1.7,-18.88l-0.89,-9.99z" />
+				<path id="Shape" class="shp3" d="M168.8,136.5v23.13v14.02v0.09h-40.83h-0.12l-0.75,-8.37l-1.7,-18.88l-0.89,-9.99z" />
+			</g>
+		</g>
+	</g>
+</svg>
